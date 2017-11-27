@@ -30,3 +30,20 @@
   :bind (("C-x g" . magit-status)
 	 ("C-x M-g" . magit-dispatch-popup)))
 
+;; Smooth scrolling
+(use-package sublimity
+  :config
+    (require 'sublimity)
+    (require 'sublimity-scroll)
+    (sublimity-mode 1))
+
+;; Guess indent style
+(use-package dtrt-indent
+  :config (dtrt-indent-mode))
+
+;; Highlight parens
+(show-paren-mode)
+
+;; Selecting by regions
+(use-package expand-region
+  :bind ("C-=" . er/expand-region))
