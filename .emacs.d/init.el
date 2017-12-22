@@ -47,3 +47,7 @@
 ;; Selecting by regions
 (use-package expand-region
   :bind ("C-=" . er/expand-region))
+
+;; Autcompletion
+(use-package company
+  :config (global-company-mode))
